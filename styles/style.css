@@ -1,1 +1,160 @@
-/* место для вашего кода */
+.content-section { /*Этот класс можно присвоить всем элементам в HTML, кроме main*/
+    box-sizing: border-box; /* отсчитывает отступы внутрь бокса */
+    width: 100%;
+    max-width: 1440px;
+    margin: auto; /* автоматически центрирует контент */
+}
+
+.header {    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 92px 49px 92px 51px;
+        
+}
+
+.header__menu { /*контейнер навигации*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: center;
+    justify-self: start;
+    width: 395px;
+    height: 23px;
+    /*flex-shrink: 0;*/
+}
+
+.header__links-list {
+    display: flex;
+    flex-direction: row;
+    gap: 34px;
+    list-style: circle;
+    
+}
+
+.header__menu-link {
+    font-size: 18px;
+    line-height: normal;
+    color: #000;
+
+}
+
+.header__links-list-item_no-bullit .header__menu-link {
+    list-style: none; /*не получается убрать, возможно, стоит заменить на иконки*/
+    text-decoration: none;    
+
+}
+
+.header__logo {
+    display: block; /*проверить нужно ли*/
+    grid-column-start: 3;
+    grid-column-end: 4;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.header__logo-image {
+    width: 148px;
+    height: 105px;
+}
+
+.address {
+    grid-column-start: -1;
+    grid-column-end: -2;
+    align-self: center;
+    justify-self: end;
+    font-style: normal;    
+    font-size: 18px;
+    line-height: 24.3px;
+}
+
+
+
+.cover {
+    display: flex;
+    flex-direction: column;        
+    background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;    
+    background-position: center center; /*?*/
+    background-size: 100% auto; /*?*/
+}
+
+.overlay {    
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / .6);
+
+}
+
+
+.cover-titel {  
+    padding: 165px 50px 120px 50px; /*разобраться с межстрочным и межбуквенным*/    
+    color: #FFF;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 30px;
+    line-height: 123px;
+    text-transform: uppercase;    
+    
+}
+
+.span-letter-spacing-big {
+    letter-spacing: 60px;
+}
+
+.accent-span {
+    display: block; /* все span инлайновые, не занимают всю строку, поэтому делаем их блочными */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+.cover__description { /* контейнер для подзаголовка и кнопки;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 0 50px 50px 0;
+
+}
+
+.cover__description-text { /*текст подзаголовка;*/
+    color: #fff;
+    text-align: center;    
+    font-size: 22px;   
+    font-weight: 400; 
+    line-height: 28px; /* 127.273% */
+    text-transform: uppercase;
+    word-spacing: 18px;
+    margin-right: 78px;
+}
+
+.bet-button { /*нужно ли добавить функционал кнопки?*/
+    color: white;
+    background-color: transparent;
+    padding: 12px 32px;
+    border: 1px solid #fff;
+    text-align: center;    
+    font-size: 22px;   
+    font-weight: 400; 
+    line-height: 28px; /* 127.273% */
+    text-transform: uppercase;
+}
+
+.lots {
+
+}
+
+.about {
+
+}
+
+.footer {
+
+}

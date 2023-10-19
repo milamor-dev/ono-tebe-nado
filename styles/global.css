@@ -8,6 +8,8 @@ body {
   min-width: 1100px;
   margin: 0;
   font-family: Raleway, sans-serif;
+  font-weight: 400;
+  background-color: #fff;
 }
 
 h1,
@@ -21,12 +23,15 @@ ul,
 ol,
 li,
 blockquote {
+  /*all: unset;*/
   margin: 0;
   padding: 0;
 }
 
 a {
-  color: inherit;
+  color: inherit;  
+  display: inline-block;
+  text-underline-offset: 4px;
 }
 
 img {

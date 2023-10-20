@@ -107,7 +107,7 @@
 }
 
 .accent-span {
-    display: block; /* все span инлайновые, не занимают всю строку, поэтому делаем их блочными */
+    display: block; 
 }
 
 .text-center {
@@ -273,7 +273,7 @@
 }
 
 .about__column_logo {
-    align-items: center; 
+    justify-self: center; 
 }
 
 .about__logo { /*контейнер с логотипом*/

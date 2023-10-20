@@ -29,7 +29,8 @@ blockquote {
 }
 
 a {
-  color: inherit;  
+  color: inherit;
+  
   display: inline-block;
   text-underline-offset: 4px;
 }

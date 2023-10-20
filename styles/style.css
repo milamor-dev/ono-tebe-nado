@@ -5,11 +5,11 @@
     margin: auto; /* автоматически центрирует контент */
 }
 
-.header {    
+.header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    padding: 91px 49px 92px 51px;
-        
+    padding: 91px 49px 92px 51px;    
+
 }
 
 .header__menu { /*контейнер навигации*/
@@ -24,21 +24,21 @@
     display: flex;
     flex-direction: row;
     gap: 34px;
-    list-style: circle;
-    
+    list-style: circle;  
+
 }
 
 .header__menu-link {
     font-size: 18px;
     line-height: normal;
-    color: #000;
-    
+    color: #000;   
+
 
 }
 
 .header__links-list-item_no-bullit .header__menu-link {
     list-style: none; /*не получается убрать, возможно, стоит заменить на иконки*/
-    text-decoration: none;    
+    text-decoration: none;
 
 }
 
@@ -61,7 +61,7 @@
     grid-column-end: -3;
     align-self: center;
     justify-self: end;
-    font-style: normal;    
+    font-style: normal;
     font-size: 18px;
     line-height: 24.3px;
 }
@@ -73,13 +73,13 @@
     z-index: 0;
     width: 1440px;
     height: 757px;
-    padding: 163px 50px 50px 50px;             
+    padding: 163px 50px 50px 50px;
     background-image: url(../images/cover.jpg);
     background-size: cover;
-    background-repeat: no-repeat;    
-    background-position: center center; /*?*/
-    background-size: 100% auto; /*?*/    
-    
+    background-repeat: no-repeat;
+    background-position: center center; 
+    /*background-size: 100% auto;*/
+
 }
 
 .cover-box-texts {
@@ -91,15 +91,15 @@
 
 }
 
-.cover-titel {        
+.cover-titel {
     color: #FFF;
     font-size: 100px;
     font-weight: 700;
-    line-height: 100%;
+    /*line-height: 100%;*/
     letter-spacing: 30px;
     line-height: 123px;
-    text-transform: uppercase;     
-    
+    text-transform: uppercase;
+
 }
 
 .span-letter-spacing-big {
@@ -107,7 +107,8 @@
 }
 
 .accent-span {
-    display: block; 
+    display: block;
+
 }
 
 .text-center {
@@ -133,9 +134,9 @@
 
 .cover__description-text { /*текст подзаголовка;*/
     color: #fff;
-    text-align: center;    
-    font-size: 22px;   
-    font-weight: 400; 
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
     line-height: 28px; /* 127.273% */
     text-transform: uppercase;
     word-spacing: 18px;
@@ -147,14 +148,14 @@
     background-color: transparent;
     padding: 12px 32px;
     border: 1px solid #fff;
-    text-align: center;    
-    font-size: 22px;   
-    font-weight: 400; 
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
     line-height: 28px; /* 127.273% */
     text-transform: uppercase;
 }
 
-.overlay { 
+.overlay {
     z-index: 1;
     position: absolute;
     width: 100%;
@@ -184,7 +185,7 @@
 
 .lots__card-list {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
     gap: 25px;
     list-style: none;
     flex-wrap:wrap;
@@ -200,35 +201,35 @@
 .card-link {
     display: block;
     height: 100%;
-    text-decoration: none; 
-    
+    text-decoration: none;
+
 }
 
 .card {
     position: relative;
     padding: 50px 40px;
-    display: flex;    
-    height: 100%;        
-    flex-direction:column;    
+    display: flex;
+    height: 100%;
+    flex-direction:column;
     justify-content:space-between;
-    color: #FFF;    
+    color: #FFF;
 
 }
 
-.card__title {   
+.card__title {
     z-index: 3;
     font-size: 22px;
-    font-weight: 700;    
+    font-weight: 700;
     text-decoration-line: underline;
     display: inline-block;
-    text-underline-offset: 3px;    
+    text-underline-offset: 3px;
     text-transform: uppercase;
     line-height: 120%; /* 26.4px */
 }
 
-.card__text {   
-    z-index: 3; 
-    font-size: 20px;    
+.card__text {
+    z-index: 3;
+    font-size: 20px;
     font-weight: 400;
     line-height: 120%; /* 26.4px */
 
@@ -263,7 +264,7 @@
 
 .about {
     display: grid;
-    grid-template-columns: repeat(3, 430px); 
+    grid-template-columns: repeat(3, 430px);
     grid-template-rows: 487px;
     gap: 25px;
     padding: 0 50px;
@@ -273,7 +274,8 @@
 }
 
 .about__column_logo {
-    justify-self: center; 
+    justify-self: center;
+
 }
 
 .about__logo { /*контейнер с логотипом*/
@@ -283,7 +285,7 @@
     width: 240px;
     height: 240px;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     border-radius: 50%;
     background-color: black;
 }
@@ -298,9 +300,9 @@
     display: flex;
     grid-column-start: 2;
     grid-column-end: 4;
-    flex-direction: column;    
+    flex-direction: column;
     gap: 28px;
-    justify-content: end;   
+    justify-content: end;
 
 }
 
@@ -330,7 +332,7 @@
     grid-column-end: 3;
     align-self: end;
     justify-self: start;
-    font-style: normal;    
+    font-style: normal;
     font-size: 18px;
     line-height: 24.3px;
 }
@@ -346,16 +348,16 @@
 
 .footer__links-list {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     list-style: none;
     text-align: center;
     
 }
 
 
-.footer__links-list-item-active .header__menu-link {    
-    text-decoration: none;   
-    
+.footer__links-list-item-active .header__menu-link {
+    text-decoration: none;
+
 }
 
 .footer__social {
@@ -368,16 +370,9 @@
 
 .footer__social-list {
     display: flex;
-    flex-direction: rox; 
+    flex-direction: rox;
     gap: 47px;
     list-style: none;
-}
-
-.footer__social-list-item {
-
-}
-
-.footer__social-link {
 
 }
 
